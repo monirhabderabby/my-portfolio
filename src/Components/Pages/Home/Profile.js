@@ -1,13 +1,14 @@
 import React from 'react';
-import './Profile.module.css'
+import './Profile.css'
 import Typical from 'react-typical'
 
 const Profile = () => {
     return (
         <div className='profile-container'>
             <div className='profile-parent'>
-                <div className='profile-detail'>
+                <div className='profile-details'>
                     <div className='colz'>
+                        <div className='colz-icon'>
                         <a href="https://www.facebook.com/monirhabderabby/">
                             <i className='fa fa-facebook-square'></i>
                         </a>
@@ -23,6 +24,8 @@ const Profile = () => {
                         <a href="https://twitter.com/monirhabderabby">
                             <i className='fa fa-twitter'></i>
                         </a>
+                        </div>
+                        
                     </div>
                     <div className='profile-details-name'>
                         <span className='primary-text'>
@@ -62,6 +65,11 @@ const Profile = () => {
                         <a href="Monir-Hossain-Resume.pdf" download="Monir-Hossain-Resume.pdf">
                             <button className='btn highlighted-btn'>Get Resume</button>
                         </a>
+                    </div>
+                </div>
+                <div className='profile-picture'>
+                    <div className='profile-picture-background'>
+
                     </div>
                 </div>
             </div>
