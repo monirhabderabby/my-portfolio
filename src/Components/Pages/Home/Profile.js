@@ -1,5 +1,6 @@
 import React from 'react';
 import './Profile.module.css'
+import Typical from 'react-typical'
 
 const Profile = () => {
     return (
@@ -22,6 +23,34 @@ const Profile = () => {
                         <a href="https://twitter.com/monirhabderabby">
                             <i className='fa fa-twitter'></i>
                         </a>
+                    </div>
+                    <div className='profile-details-name'>
+                        <span className='primary-text'>
+                            {" "}
+                            Hello, I'M <span className='highlighted-text'>Monir Hossain</span>
+                        </span>
+                    </div>
+                    <div className='profile-details-role'>
+                        <span className='primary-text'>
+                            {" "}
+                            <h1>
+                                {" "}
+                                <Typical 
+                                loop={Infinity}
+                                steps={[
+                                    "Front End Developer 🖥",
+                                    1000,
+                                    "React Developer 💻",
+                                    1000,
+                                    "MERN Stack Developer 🖥",
+                                    1000,
+                                    "Full Stack Developer 💻",
+                                    1000,
+                                ]}
+                                />
+                            </h1>
+                            <span className='profile-role-tagline'></span>
+                        </span>
                     </div>
                 </div>
             </div>
