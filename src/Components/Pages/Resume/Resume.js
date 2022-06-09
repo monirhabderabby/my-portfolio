@@ -1,7 +1,7 @@
 import React from 'react';
 import './Resume Css/Resume.css'
 import { Link, Outlet } from 'react-router-dom';
-import { AcademicCapIcon, DesktopComputerIcon, DocumentSearchIcon, DocumentReportIcon } from '@heroicons/react/solid'
+import { AcademicCapIcon, DocumentSearchIcon, DocumentReportIcon, CodeIcon, HomeIcon } from '@heroicons/react/solid'
 
 const Resume = () => {
     return (
@@ -10,15 +10,15 @@ const Resume = () => {
   <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content flex flex-col px-12 mt-4">
     <Outlet></Outlet>
-    <label for="my-drawer-2" class="btn btn-primary drawer-button absolute top-0 right-2 lg:hidden">Open drawer</label>
+    <label for="my-drawer-2" class="btn btn-primary drawer-button absolute top-0 right-2 lg:hidden">Open</label>
   
   </div> 
   <div class="drawer-side">
     <label for="my-drawer-2" class="drawer-overlay"></label> 
     <ul class="menu p-4 w-80 overflow-y-auto text-base-content">
       <li className='py-1'>
-        <Link to="/resume/skills">
-          <DesktopComputerIcon className="h-5 w-5 text-black" />
+        <Link to="/resume">
+          <CodeIcon className="h-5 w-5 text-black" />
           Skills</Link>
       </li>
       <li className='py-1'>
@@ -37,10 +37,11 @@ const Resume = () => {
           Projects</Link>
       </li>
       <li>
-
+      <Link to="/">
+        <HomeIcon className="h-5 w-5 text-black" />
+        Back to Home</Link>
       </li>
     </ul>
-    <Link to="/">Back to Landing Page</Link>
   
   </div>
 </div>
