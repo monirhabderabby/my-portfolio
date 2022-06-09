@@ -5,6 +5,7 @@ import Profile from './Components/Pages/Home/Profile';
 import Education from './Components/Pages/Resume/Education';
 import Resume from './Components/Pages/Resume/Resume';
 import Skills from './Components/Pages/Resume/Skills';
+import WorkHistory from './Components/Pages/Resume/WorkHistory';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/resume' element={<Resume></Resume>}>
           <Route path="skills" index element={<Skills></Skills>}></Route>
           <Route path='education' element={<Education></Education>}></Route>
+          <Route path='workHistory' element={<WorkHistory></WorkHistory>}></Route>
         </Route>
       </Routes>
     </div>
