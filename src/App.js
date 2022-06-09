@@ -4,6 +4,7 @@ import About from './Components/Pages/AboutMe/About';
 import Profile from './Components/Pages/Home/Profile';
 import Education from './Components/Pages/Resume/Education';
 import Resume from './Components/Pages/Resume/Resume';
+import Skills from './Components/Pages/Resume/Skills';
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
           <>
           <Profile />
           <About />
-          <Resume />
           </>
         }></Route>
-        <Route path='/#resume' element={<Resume></Resume>}>
+        <Route path='/resume' element={<Resume></Resume>}>
+          <Route path="skills" index element={<Skills></Skills>}></Route>
           <Route path='education' element={<Education></Education>}></Route>
         </Route>
       </Routes>

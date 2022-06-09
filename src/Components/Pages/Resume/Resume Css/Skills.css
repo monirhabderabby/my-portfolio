@@ -1,0 +1,12 @@
+.skill-container{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 2rem;
+    font-family: "Poppins Regular";
+}
+.skill-container p{
+    letter-spacing: 1.3px;
+}
+.skill-container p span{
+    color: var(--orange);
+}
