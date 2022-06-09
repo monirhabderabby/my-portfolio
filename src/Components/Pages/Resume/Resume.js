@@ -1,6 +1,7 @@
 import React from 'react';
 import './Resume Css/Resume.css'
 import { Link, Outlet } from 'react-router-dom';
+import { AcademicCapIcon, DesktopComputerIcon, DocumentSearchIcon, DocumentReportIcon } from '@heroicons/react/solid'
 
 const Resume = () => {
     return (
@@ -16,16 +17,24 @@ const Resume = () => {
     <label for="my-drawer-2" class="drawer-overlay"></label> 
     <ul class="menu p-4 w-80 overflow-y-auto text-base-content">
       <li className='py-1'>
-        <Link to="/resume/skills">Skills</Link>
+        <Link to="/resume/skills">
+          <DesktopComputerIcon className="h-5 w-5 text-black" />
+          Skills</Link>
       </li>
       <li className='py-1'>
-        <Link to="/resume/education">Education</Link>
+        <Link to="/resume/education">
+        <AcademicCapIcon className="h-5 w-5 text-black"/>
+          Education</Link>
       </li>
       <li className='py-1'>
-        <Link to="/resume/workHistory">Work History</Link>
+        <Link to="/resume/workHistory">
+          <DocumentSearchIcon className="h-5 w-5 text-black" />
+          Work History</Link>
       </li>
       <li className='py-1'>
-        <Link to="/resume/projects">Projects</Link>
+        <Link to="/resume/projects">
+          <DocumentReportIcon className="h-5 w-5 text-black" />
+          Projects</Link>
       </li>
       <li>
 
