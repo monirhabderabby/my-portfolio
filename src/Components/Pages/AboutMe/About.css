@@ -1,6 +1,7 @@
 .about{
     margin-top: 10%;
     margin-bottom: 10%;
+    height: 100vh;
 }
 .heading-container{
     display: flex;
@@ -88,10 +89,23 @@
         display: none;
     }
     .about-card{
+        position: absolute;
+        height: auto;
+        display: block;
         width: 90%;
+        margin-bottom: 10%;
     }
     .about-me-details{
         width: 100%;
         position: absolute;
+    }
+    .heading-container{
+        margin: 0 0 10px;
+    }
+    .about-me-details{
+        padding: 10px;
+    }
+    .about-me-hightlights{
+        margin: 30px 0;
     }
 }

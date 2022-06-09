@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/Pages/AboutMe/About';
+import Footer from './Components/Pages/Footer/Footer';
 import Profile from './Components/Pages/Home/Profile';
 import HomeProjects from './Components/Pages/Projects/HomeProjects';
 import Education from './Components/Pages/Resume/Education';
@@ -19,6 +20,7 @@ function App() {
           <Profile />
           <About />
           <HomeProjects />
+          <Footer />
           </>
         }></Route>
         <Route path='/resume' element={<Resume></Resume>}>

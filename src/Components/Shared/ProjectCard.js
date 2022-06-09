@@ -4,7 +4,7 @@ import './ProjectCard.css'
 const ProjectCard = ({ data }) => {
     return (
         <div>
-            <div class="card mx-auto w-96 bg-base-100 shadow-xl">
+            <div class="card mx-auto sm:w-24 lg:w-96 bg-base-100 shadow-xl">
                 <figure>
                     <img
                         src={data?.img}

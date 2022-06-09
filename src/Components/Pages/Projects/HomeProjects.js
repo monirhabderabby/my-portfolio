@@ -30,7 +30,7 @@ const HomeProjects = () => {
                     <div className='a-separator-blob'><div></div></div>
                 </div>
             </div>
-            <div className='grid grid-cols-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-4'>
             {
                 projects.map(p=> <ProjectCard key={p._id} data={p} />)
             }
