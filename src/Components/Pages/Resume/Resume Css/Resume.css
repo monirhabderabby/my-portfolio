@@ -1,0 +1,10 @@
+.resume-container{
+    display: flex;
+    justify-content: space-around;
+}
+.resume-card{
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 50%;
+    box-shadow: 0 0 20px -2px #1f2235;
+}

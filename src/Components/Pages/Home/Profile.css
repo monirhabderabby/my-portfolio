@@ -88,6 +88,24 @@
     transform: scale(1.5);
 }
 
+.primary-btn{
+    color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
+}
+.primary-btn:hover {
+    color: aliceblue;
+    border: 2px solid #ff5823;
+    background-color: #1f2235;
+  }
+  .highlighted-btn {
+    color: var(--white);
+  
+    font-size: 12px;
+    background-color: #ff5823;
+  }
+
 
 @media screen and (max-width: 1110px){
     .profile-picture{
