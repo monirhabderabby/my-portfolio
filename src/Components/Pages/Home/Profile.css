@@ -1,4 +1,16 @@
-.profile-container{
+.container-pro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    min-height: fit-content;
+    background-image: url('../../../Assets/Home/bg.jpg');
+}
+
+
+/* .profile-container{
     display: flex;
     align-items: center;
     text-align: center;
@@ -6,7 +18,7 @@
     height: 10%;
     min-height: fit-content;
     background-image: url('../../../Assets/Home/bg.jpg');
-}
+} */
 .profile-parent{
     display: flex;
     align-items: center;
