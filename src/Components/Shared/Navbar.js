@@ -20,7 +20,7 @@ const Navbar = () => {
                         <a href="#testmonials">Testmonials</a>
                     </li>
                     <li>
-                        <a href="#contactme">Contact</a>
+                        <Link to='/contactme'>Contact Me</Link>
                     </li>
                 </ul>
             </nav>

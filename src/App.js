@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/Pages/AboutMe/About';
+import ContactMe from './Components/Pages/ContactMe/ContactMe';
 import Footer from './Components/Pages/Footer/Footer';
 import Profile from './Components/Pages/Home/Profile';
 import HomeProjects from './Components/Pages/Projects/HomeProjects';
@@ -20,6 +21,7 @@ function App() {
           <Profile />
           <About />
           <HomeProjects />
+          <ContactMe />
           <Footer />
           </>
         }></Route>
@@ -29,6 +31,7 @@ function App() {
           <Route path='workHistory' element={<WorkHistory></WorkHistory>}></Route>
           <Route path='projects' element={<Projects></Projects>}></Route>
         </Route>
+        <Route path='/contactme' element={<ContactMe />}></Route>
       </Routes>
     </div>
   );
