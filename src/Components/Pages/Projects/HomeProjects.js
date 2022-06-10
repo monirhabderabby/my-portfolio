@@ -13,7 +13,7 @@ const HomeProjects = () => {
     return (
         <section className='px-3'>
             <div className='flex justify-center my-24 relative'>
-                <span className='projects-heading absolute'>Projects</span>
+                <span className='projects-heading absolute' id='projects'>Projects</span>
             </div>
             <div className='grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3'>
                 {
