@@ -25,18 +25,6 @@ const ProjectCard = ({ data }) => {
                         <div class="badge badge-secondary">Query</div>
                         <div class="badge badge-secondary">Stripe</div>
                     </div>
-                    {/* <div class="card-actions justify-start mt-5">
-                        <div class="badge badge-outline">
-                            <a href="https://github.com/monirhabderabby/AORUS-Website" target={'_blank'}>
-                                <button>Client Side Code</button>
-                            </a>
-                        </div>
-                        <div class="badge badge-outline">
-                            <a href="https://github.com/monirhabderabby/AORUS-server" target={'_blank'} >
-                                <button>BackEnd Side Code</button>
-                            </a>
-                        </div>
-                    </div> */}
                     <div>
                     <Link to={`projectDetails/${data?._id}`}><button className="btn btn-live mt-4">
                     <i className='fa fa-eye mr-3'></i>
