@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './ProjectCard.css'
 
 const ProjectCard = ({ data }) => {
@@ -6,33 +7,10 @@ const ProjectCard = ({ data }) => {
         <div>
             <div class="card mx-auto sm:w-24 lg:w-96 bg-base-100 shadow-xl">
                 <figure>
-                <div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img src={data?.img} class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" class="btn btn-circle">❮</a> 
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" class="carousel-item relative w-full">
-    <img src={data?.img} class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" class="btn btn-circle">❮</a> 
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" class="carousel-item relative w-full">
-    <img src={data?.img} class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" class="btn btn-circle">❮</a> 
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-                    {/* <img
+                    <img
                         src={data?.img}
                         alt="Shoes"
-                    /> */}
+                    />
                 </figure>
                 <div class="card-body">
                     <h2 class="card-title">
@@ -47,7 +25,7 @@ const ProjectCard = ({ data }) => {
                         <div class="badge badge-secondary">Query</div>
                         <div class="badge badge-secondary">Stripe</div>
                     </div>
-                    <div class="card-actions justify-start mt-5">
+                    {/* <div class="card-actions justify-start mt-5">
                         <div class="badge badge-outline">
                             <a href="https://github.com/monirhabderabby/AORUS-Website" target={'_blank'}>
                                 <button>Client Side Code</button>
@@ -58,11 +36,11 @@ const ProjectCard = ({ data }) => {
                                 <button>BackEnd Side Code</button>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                     <div>
-                    <a href={data?.site} target={'_blank'} >
-                                <button className="btn btn-live mt-4">Live Site</button>
-                            </a>
+                    <Link to={`projectDetails/${data?._id}`}><button className="btn btn-live mt-4">
+                    <i className='fa fa-eye mr-3'></i>
+                        View Details</button></Link>
                     </div>
                 </div>
             </div>

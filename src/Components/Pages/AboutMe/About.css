@@ -1,7 +1,7 @@
 .about{
+    position:relative;
     margin-top: 10%;
     margin-bottom: 10%;
-    height: 100vh;
 }
 .heading-container{
     display: flex;
@@ -100,7 +100,7 @@
         position: absolute;
     }
     .heading-container{
-        margin: 0 0 10px;
+        margin: 0 0 40px;
     }
     .about-me-details{
         padding: 10px;

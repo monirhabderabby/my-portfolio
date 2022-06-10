@@ -1,8 +1,10 @@
-import React from 'react';
-import './HomeProjects.css'
-import ProjectCard from '../../Shared/ProjectCard';
+import { data } from 'autoprefixer';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
-const HomeProjects = () => {
+const ProjectDetails = () => {
+    const [project, setProjects] = useState({});
+    const { id } = useParams();
     const projects = [
         {
             "_id": 1,
@@ -30,18 +32,19 @@ const HomeProjects = () => {
         }
 
     ]
+
+    useEffect(()=> {
+        
+        
+    }, [id])
+    
     return (
-        <section>
-            <div className='flex justify-center my-24 relative'>
-                <span className='projects-heading absolute'>Projects</span>
-            </div>
-            <div className='grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3'>
-                {
-                    projects.map(p=> <ProjectCard key={p._id} data={p} />)
-                }
-            </div>
-        </section>
+        <div>
+            {
+                
+            }
+        </div>
     );
 };
 
-export default HomeProjects;
+export default ProjectDetails;

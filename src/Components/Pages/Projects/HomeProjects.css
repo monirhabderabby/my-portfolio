@@ -1,38 +1,7 @@
-.project-card1{
-    width: 350px;
-    height: 250px;
-    box-shadow: 0 0 20px -2px #1f2235;
-    position: relative;
-    margin: 0 auto;
-    background-image: url('../../../Assets//projects-img/AORUUS.png');
-    transition: opacity 0.5s ease-in;
-    background-size: cover;
-}
-.tech{
-    border: 1px solid white;
-    text-align: center;
-    border-radius: 4px;
-    color: var(--orange);
-}
-.content1{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    visibility: hidden;
-    transition: 0.5s;
-}
-.project-card1:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/projects-img/AORUUS.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.project-card1:hover .content1{
-    visibility: visible;
+.projects-heading{
+    font-size: 32px;
+    color: #1f2235;
+    font-family: "Poppins Bold";
 }
 .btn-code{
     margin-top: 10px;
