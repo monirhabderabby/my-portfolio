@@ -89,8 +89,7 @@
         display: none;
     }
     .about-card{
-        position: absolute;
-        height: auto;
+        height: 80vh;
         display: block;
         width: 90%;
         margin-bottom: 10%;
