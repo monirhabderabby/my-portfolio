@@ -5,7 +5,7 @@ import { useQuery } from 'react-query';
 import Loading from '../../Shared/Loading';
 
 const HomeProjects = () => {
-    const {data:projects, isLoading} = useQuery('projects', ()=> fetch("http://localhost:5000/projects").then(res=> res.json()))
+    const {data:projects, isLoading} = useQuery('projects', ()=> fetch("https://secure-plains-56866.herokuapp.com/projects").then(res=> res.json()))
 
     if(isLoading){
         return <Loading />

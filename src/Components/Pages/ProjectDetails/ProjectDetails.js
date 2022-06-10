@@ -1,23 +1,29 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faCheckSquare,
+    faCircleArrowLeft,
     faCircleArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { useQuery } from "react-query";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Loading from "../../Shared/Loading";
 
 const ProjectDetails = () => {
     const { id } = useParams();
     const { data, isLoading } = useQuery("singleProject", () =>
-        fetch(`http://localhost:5000/project/${id}`).then((res) => res.json())
+        fetch(`https://secure-plains-56866.herokuapp.com/project/${id}`).then((res) => res.json())
     );
     if (isLoading) {
         return <Loading />;
     }
 
     return (
-        <div className="px-6 md:px-12 lg:px-24 mt-3 lg:mt-[5%]">
+        <div className="px-6 md:px-12 lg:px-24 mt-3 lg:mt-[2%]">
+            <Link to='/'>
+            <FontAwesomeIcon
+                                    icon={faCircleArrowLeft}
+                                    className="w-6 ml-1"
+                                />
+                Home</Link>
             <div class="card lg:card-side bg-base-100 shadow-xl">
                 <figure className="p-0">
                     <div class="carousel w-full">
