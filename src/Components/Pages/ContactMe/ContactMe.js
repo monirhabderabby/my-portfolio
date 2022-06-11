@@ -16,7 +16,7 @@ const ContactMe = () => {
             <div class="card lg:card-side">
                 <div className="w-full">
                     <div className="text-white lg:w-3/4  p-3">
-                        <h1 className="text-5xl font-bold my-3 lg:mx-8">
+                        <h1 className="text-5xl font-bold my-3 lg:mx-8" id="contactme">
                             GET IN{" "}
                             <span className="text-orange-500">TOUCH</span>
                         </h1>
