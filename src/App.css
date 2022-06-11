@@ -18,3 +18,7 @@
   --toast-success: #0CBFAE;
   --loader-color: #0CBFAE
 }
+
+*{
+  scroll-behavior: smooth;
+}
