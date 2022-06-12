@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import bg from "../../../Assets/Home/bg.jpg";
+import swal from "sweetalert";
 import {
     faLocationDot,
     faEnvelope,
@@ -16,6 +17,10 @@ const ContactMe = () => {
       .then((result) => {
           if(result.text === "OK"){
             e.target.reset();
+            swal({
+                icon: "success",
+                text: "Thanks for Contact me!"
+              });
           }
       }, (error) => {
           console.log(error.text);
