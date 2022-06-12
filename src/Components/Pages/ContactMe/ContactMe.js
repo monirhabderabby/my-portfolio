@@ -1,13 +1,28 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import bg from "../../../Assets/Home/bg.jpg";
 import {
     faLocationDot,
     faEnvelope,
     faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import emailjs from 'emailjs-com'
 
 const ContactMe = () => {
+    const handleMessage = e =>{
+        e.preventDefault();
+
+        emailjs.sendForm('service_agdgnjp', 'template_6u8hazd', e.target, 'psKoaryTyxneGTu2f')
+      .then((result) => {
+          if(result.text === "OK"){
+            e.target.reset();
+          }
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
+
+
     return (
         <div className="my-24 py-12 md:py-24" style={{
             backgroundImage: `url(${bg})`,
@@ -51,7 +66,7 @@ const ContactMe = () => {
                 </div>
 
                 <div className="w-full">
-                    <form className="sm:max-w-sm lg:w-96 mx-auto px-4 sm:my-6 sm:max-w-sm">
+                    <form className="sm:max-w-sm lg:w-96 mx-auto px-4 sm:my-6 sm:max-w-sm" onSubmit={handleMessage}>
                         <input
                             type="text"
                             placeholder="Your Name"
@@ -69,6 +84,7 @@ const ContactMe = () => {
                         <textarea
                             class="textarea textarea-bordered w-full lg:max-w-lg my-3"
                             placeholder="Message"
+                            name="message"
                         ></textarea>
                         <input
                             type="submit"

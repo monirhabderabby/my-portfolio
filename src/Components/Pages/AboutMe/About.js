@@ -1,16 +1,17 @@
 import React from 'react';
 import './About.css'
-import img from '../../../Assets/Home/aboutpic.jpg'
-
+import img from '../../../Assets/Home/aboutpic.jpg';
 const About = () => {
     return (
+        
+            
         <section className='about'>
             <div className="heading-container">
                 <div className="screan-heading" id='aboutme'>
                     <span>About Me</span>
                 </div>
                 <div className='screan-sub-heading'>
-                    <span>Why Choose My?</span>
+                    <span style={{ fontSize: "30px" }}>Why Choose My?</span>
                 </div>
                 <div className='a-heading-separator'>
                     <div className='a-separator-line'></div>
@@ -59,6 +60,7 @@ const About = () => {
             </div>
         </div>
         </section>
+        
     );
 };
 
