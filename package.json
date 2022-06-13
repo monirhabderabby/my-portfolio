@@ -21,6 +21,7 @@
     "react-ionicons": "^4.2.0",
     "react-query": "^3.39.1",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.0.6",
     "react-typical": "^0.1.3",

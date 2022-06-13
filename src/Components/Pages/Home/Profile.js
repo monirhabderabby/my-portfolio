@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <section className='container-pro -z-50'>
             <Navbar />
-                <div className='profile-container'>
+                <div className='profile-container' id='profile'>
                     <div className='profile-parent'>
                         <div className='profile-details'>
                             <div className='colz'>
