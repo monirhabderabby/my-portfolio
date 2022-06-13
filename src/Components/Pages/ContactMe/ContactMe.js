@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
 import bg from "../../../Assets/Home/bg.jpg";
 import swal from "sweetalert";
 import {
