@@ -11,7 +11,7 @@ const HomeProjects = () => {
         return <Loading />
     }
     return (
-        <section className='px-3'>
+        <section className='px-3 -z-50'>
             <div className='flex justify-center my-24 relative'>
                 <span className='projects-heading absolute' id='projects'>Projects</span>
             </div>

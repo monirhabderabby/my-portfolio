@@ -5,7 +5,7 @@ import Navbar from '../../Shared/Navbar';
 
 const Profile = () => {
     return (
-        <section className='container-pro'>
+        <section className='container-pro -z-50'>
             <Navbar />
                 <div className='profile-container'>
                     <div className='profile-parent'>

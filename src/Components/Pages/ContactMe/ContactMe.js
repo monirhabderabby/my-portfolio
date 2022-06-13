@@ -28,7 +28,7 @@ const ContactMe = () => {
 
 
     return (
-        <div className="my-24 py-12 md:py-24" style={{
+        <div className="my-24 py-12 md:py-24 -z-50" style={{
             backgroundImage: `url(${bg})`,
             backgroundSize: "cover"
         }}>
