@@ -28,7 +28,7 @@ const ProjectDetails = () => {
                 <figure className="p-0">
                     <div class="carousel w-full">
                         <div id="slide1" class="carousel-item relative w-full">
-                            <img src={data?.img} class="w-full" />
+                            <img src={data?.img} class="w-full" alt="img"/>
                             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" class="btn btn-circle">
                                     ❮
@@ -39,7 +39,7 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                         <div id="slide2" class="carousel-item relative w-full">
-                            <img src={data?.img2} class="w-full" />
+                            <img src={data?.img2} class="w-full" alt="img"/>
                             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide1" class="btn btn-circle">
                                     ❮
@@ -50,7 +50,7 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                         <div id="slide3" class="carousel-item relative w-full">
-                            <img src={data?.img3} class="w-full" />
+                            <img src={data?.img3} class="w-full" alt="img"/>
                             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide2" class="btn btn-circle">
                                     ❮
@@ -77,7 +77,7 @@ const ProjectDetails = () => {
                     <div class="flex justify-between mt-5">
                         <div>
                         <button class="btn btn-sm gap-2 lg:mx-3">
-                            <a href={data?.clientCode} target={"_blank"} className="flex justify-center items-center">Client
+                            <a href={data?.clientCode} target={"_blank"} className="flex justify-center items-center" rel="noopener noreferrer" >Client
                             <i class="fa fa-github text-xl ml-1"></i></a>
                         </button>
                         </div>
@@ -89,7 +89,7 @@ const ProjectDetails = () => {
                         </div>
                     </div>
                     <div class=" w-full">
-                        <a href={data?.liveLink} target={"_blank"}>
+                        <a href={data?.liveLink} target={"_blank"} rel="noreferrer">
                             <button class="btn bg-orange-500 text-white w-full">
                                 Live{" "}
                                 <FontAwesomeIcon

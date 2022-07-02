@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css'
-import { Menu, Close } from 'react-ionicons';
-import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     let Links =[
@@ -11,7 +9,6 @@ const Navbar = () => {
         {name:"BLOG'S",link:"#blogs"},
         {name:"CONTACT",link:"#contactme"},
       ];
-      let [open,setOpen]=useState(false);
     return (
     //     <div className='fixed md:static w-full top-0 left-0'>
     //   <div className='md:flex items-center justify-center py-4 md:px-10 px-7'>

@@ -70,7 +70,7 @@ const ContactMe = () => {
                 </div>
 
                 <div className="w-full">
-                    <form className="sm:max-w-sm lg:w-96 mx-auto px-4 sm:my-6 sm:max-w-sm" onSubmit={handleMessage}>
+                    <form className="sm:max-w-sm lg:w-96 mx-auto px-4 sm:my-6" onSubmit={handleMessage}>
                         <input
                             type="text"
                             placeholder="Your Name"

@@ -52,7 +52,6 @@
     font-family: "Poppins Light";
 }
 .profile-options .highlighted-btn:hover{
-    margin: 0 0 0 20px;
     background-color: cornsilk;
     color: #111;
 }
@@ -101,9 +100,9 @@
   }
   .highlighted-btn {
     color: var(--white);
-  
     font-size: 12px;
     background-color: #ff5823;
+    margin-left: 10px;
   }
 
 
