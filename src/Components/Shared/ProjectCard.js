@@ -1,10 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
 import './ProjectCard.css'
 
 const ProjectCard = ({ data }) => {
+    const navigate = useNavigate()
+    const handleViewClick = (id) => {
+        navigate(`/projectDetails/${id}`)
+        console.log("clicked")
+    }
     return (
-        <div className="-z-50">
+        <div className="z-50">
             <div class="card mx-auto sm:w-24 md:w-72 lg:w-96 bg-base-100 shadow-xl">
                 <figure>
                     <img
@@ -26,9 +31,8 @@ const ProjectCard = ({ data }) => {
                         <div class="badge badge-secondary">Stripe</div>
                     </div>
                     <div>
-                    <Link to={`projectDetails/${data?._id}`}><button className="btn btn-live mt-4">
-                    <i className='fa fa-eye mr-3'></i>
-                        View Details</button></Link>
+                    <button onClick={()=>handleViewClick(data?._id)} className="btn btn-live mt-4"><i className='fa fa-eye mr-3'></i>
+                        View Details</button>
                     </div>
                 </div>
             </div>
