@@ -6,7 +6,6 @@ const ProjectCard = ({ data }) => {
     const navigate = useNavigate()
     const handleViewClick = (id) => {
         navigate(`/projectDetails/${id}`)
-        console.log("clicked")
     }
     return (
         <div className="z-50">
